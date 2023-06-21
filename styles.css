@@ -56,7 +56,7 @@
 }
 
 
-.navbar__item{
+.navbar__item {
   justify-content: space-evenly;
 }
 
@@ -70,7 +70,7 @@
 
 /* About section */
 
-.intro__container{
+.intro__container {
   display: flex;
   width: 100%;
   align-items: center;
@@ -83,14 +83,14 @@
   margin-bottom: 179px;
 }
 
-h1.name{
+h1.name {
   color: rgb(51, 51, 51);
   font-weight: bold;
   text-align: center;
   font-size: 96px;
 }
 
-p.about__paragraph{
+p.about__paragraph {
   font-size: 20px;
   color: black;
   width: 100%;
@@ -99,18 +99,74 @@ p.about__paragraph{
   line-height: 1.5;
 }
 
-.logo__container{
+.logo__container {
   display: flex;
   margin-bottom: 16px;
   margin-left: 10%;
 }
 
-.intro__links{
+.intro__links {
   margin: 0 15px;
 }
 
-hr{
+hr {
   width: 85%;
   margin: auto;
   color: #808080;
+}
+
+.about__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 311px 0;
+  gap: 69px;
+}
+
+.about__details{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 527px;
+}
+
+.about__title {
+  font-size: 90px;
+  color: rgb(51, 51, 51);
+}
+
+.about__header {
+  font-size: 25px;
+  color: #2e2e2e;
+  font-weight: 500;
+  margin: 28px 0;
+}
+
+.about__facts {
+  font-size: 20px;
+  color: #2e2e2e;
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.hometown__img{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landscape__img{
+  width: 100%;
+  max-width: 782px;
+  max-height: 483px;
+  border-radius: 30px;
+  border: 5px solid #808080;
+}
+
+.landscape__disc{
+  font-size: 13px;
+  margin-right: 20px;
 }
