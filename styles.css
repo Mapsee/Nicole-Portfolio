@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95px;
+  max-height: 4.948vw;
   background-color: #131313;
 }
 
@@ -21,7 +21,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 60px;
+  padding: 0 3.125vw;
 }
 
 #navbar__logo {
@@ -31,7 +31,7 @@
   text-decoration: none;
   color: #fff;
   font-family: "Lato";
-  font-size: 64px;
+  font-size: 3.333vw;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
@@ -41,7 +41,7 @@
   align-items: center;
   list-style: none;
   text-align: center;
-  gap: 60px;
+  gap: 3.125vw;
 }
 
 .navbar__links {
@@ -49,7 +49,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Inter";
-  font-size: 32px;
+  font-size: 1.667vw;
   text-decoration: none;
   color: #eee;
   transition: all 0.1s ease-in-out;
@@ -76,37 +76,37 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 1.563vw;
   background-color: #dedede;
-  padding: 60px 0;
-  margin-top: 240px;
-  margin-bottom: 179px;
+  padding: 3.125vw 0;
+  margin-top: 12.5vw;
+  margin-bottom: 9.323vw;
 }
 
 h1.name {
   color: rgb(51, 51, 51);
   font-weight: bold;
   text-align: center;
-  font-size: 96px;
+  font-size: 5vw;
 }
 
 p.about__paragraph {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: black;
   width: 100%;
-  max-width: 1437px;
+  max-width: 74.844vw;
   text-align: center;
   line-height: 1.5;
 }
 
 .logo__container {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 0.833vw;
   margin-left: 10%;
 }
 
 .intro__links {
-  margin: 0 15px;
+  margin: 0 0.781vw;
 }
 
 hr {
@@ -120,8 +120,8 @@ hr {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 311px 0;
-  gap: 69px;
+  margin: 16.198vw 0;
+  gap: 3.594vw;
 }
 
 .about__details{
@@ -129,26 +129,26 @@ hr {
   align-items: baseline;
   justify-content: center;
   flex-direction: column;
-  max-width: 527px;
+  max-width: 27.448vw;
 }
 
 .about__title {
-  font-size: 90px;
+  font-size: 4.688vw;
   color: rgb(51, 51, 51);
 }
 
 .about__header {
-  font-size: 25px;
+  font-size: 1.302vw;
   color: #2e2e2e;
   font-weight: 500;
-  margin: 28px 0;
+  margin: 1.458vw 0;
 }
 
 .about__facts {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #2e2e2e;
   list-style-type: square;
-  padding-left: 20px;
+  padding-left: 1.042vw;
 }
 
 .hometown__img{
@@ -160,13 +160,13 @@ hr {
 
 .landscape__img{
   width: 100%;
-  max-width: 782px;
-  max-height: 483px;
-  border-radius: 30px;
-  border: 5px solid #808080;
+  max-width: 40.729vw;
+  max-height: 25.156vw;
+  border-radius: 1.563vw;
+  border: 0.260vw solid #808080;
 }
 
 .landscape__disc{
-  font-size: 13px;
-  margin-right: 20px;
+  font-size: 0.677vw;
+  margin-right: 1.042vw;
 }
