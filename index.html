@@ -1,46 +1,46 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NXL</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- navbar begin -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo">NXL</a>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__links">about</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/portfolio.html" class="navbar__links">portfolio</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/skills.html" class="navbar__links">skills</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/contact.html" class="navbar__links">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- navbar end -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NXL</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- main begin -->
-    <div class="main">
-      <!-- intro begin -->
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+  <!-- navbar begin -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo">NXL</a>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/about.html" class="navbar__links">about</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/portfolio.html" class="navbar__links">portfolio</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/skills.html" class="navbar__links">skills</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/contact.html" class="navbar__links">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- main begin -->
+  <div class="main">
+    <!-- intro begin -->
+    <section class="intro__section">
       <div class="intro__content">
         <div class="intro__container">
           <h1 class="name">I'm Nicole Leung</h1>
@@ -51,40 +51,21 @@
           </p>
         </div>
         <div class="logo__container">
-          <a
-            href="https://github.com/Mapsee"
-            target="_blank"
-            class="intro__links"
-            ><img
-              src="imgs/github-mark.png"
-              alt="Github"
-              style="width: 45px; height: 45px"
-          /></a>
-          <a
-            href="mailto: nxin.leung@mail.utoronto.ca"
-            target="_blank"
-            class="intro__links"
-            ><img
-              src="imgs/Microsoft.png"
-              alt="Microsoft"
-              style="width: 48.39px; height: 45px"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/nicolexyleung/"
-            target="_blank"
-            class="intro__links"
-            ><img
-              src="imgs/LI-In-Bug.png"
-              alt="LinkedIn"
-              style="width: 52.92px; height: 45px"
-          /></a>
+          <a href="https://github.com/Mapsee" target="_blank" class="intro__links"><img src="imgs/github-mark.png"
+              alt="Github" style="max-width: 2.344vw; max-height: 4.1666666666667vh" /></a>
+          <a href="mailto: nxin.leung@mail.utoronto.ca" target="_blank" class="intro__links"><img
+              src="imgs/Microsoft.png" alt="Microsoft" style="max-width: 2.520vw; max-height: 4.1666666666667vh" /></a>
+          <a href="https://www.linkedin.com/in/nicolexyleung/" target="_blank" class="intro__links"><img
+              src="imgs/LI-In-Bug.png" alt="LinkedIn" style="max-width: 2.756vw; max-height: 4.1666666666667vh" /></a>
         </div>
       </div>
-      <!-- intro end -->
+    </section>
+    <!-- intro end -->
 
-      <hr />
+    <hr />
 
-      <!-- about begin -->
+    <!-- about begin -->
+    <section class="about__section">
       <div class="about__container">
         <div class="about__details">
           <h1 class="about__title">about</h1>
@@ -106,44 +87,117 @@
           </ul>
         </div>
         <div class="hometown__img">
-          <img
-            src="imgs/landscape.jpg"
-            alt="Landscape"
-            class="landscape__img"
-          />
+          <img src="imgs/landscape.jpg" alt="Landscape" class="landscape__img" />
           <p class="landscape__disc">
             Photo taken in my home town at British Columbia.
           </p>
         </div>
       </div>
-      <!-- about end -->
+    </section>
+    <!-- about end -->
 
-      <hr />
+    <hr />
 
-      <!-- portfolio start -->
-      <h1 class="portfolio__title">portfolio</h1>
-      <p class="portfolio__header">my projects</p>
-      <p class="portfolio__header">my projects</p>
-      <div class="wrapper">
-        <div class="slider">
-          <img src="imgs/google_copy.png" alt="GoogleCopy" />
-          <div class="img__data">
-            <p>Google Copy</p>
-            <p>
-              Frontend replica of google search, google image search, and
-              advanced search. This website project is made with HTML and CSS to
-              browse the web through similar search functionalities as Google.
-            </p>
-            <img src="imgs/html_logo.png" alt="HTML-Icon">
-            <img src="imgs/css_logo.png" alt="CSS-Icon">
-            <a href="https://github.com/Mapsee/google-copy"></a>
+    <!-- portfolio start -->
+    <section class="portfolio__section">
+      <div class="portfolio__label__container">
+        <h1 class="portfolio__title">portfolio</h1>
+        <p class="portfolio__header">my projects</p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img__data">
+              <div class="img__container">
+                <img src="imgs/google_copy.png" alt="GoogleCopy" class="carousel__img">
+                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
+              </div>
+              <div class="carousel__description">
+                <p class="project__title">Google Copy</p>
+                <p class="project__details">Frontend replica of google search, google image search, and
+                  advanced search. This website project is made with HTML and CSS to
+                  browse the web through similar search functionalities as Google.</p>
+                <div class="project__icons">
+                  <img src="imgs/html_logo.png" alt="HTML-Icon"
+                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
+                  <img src="imgs/css_logo.png" alt="CSS-Icon"
+                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
+                </div>
+                <div class="github__btn">
+                  <img src="imgs/github-mark.png" alt="Github"
+                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
+                  <p style="font-size: 0.938vw;">Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img__data">
+              <div class="img__container">
+                <img src="imgs/covision.png" alt="COVISION" class="carousel__img">
+                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
+              </div>
+              <div class="carousel__description">
+                <p class="project__title">COVISION</p>
+                <p class="project__details">Using datasets from the Government of Ontario and Statistics Canada to
+                  explore the trends between
+                  COVID-19 and employment affiliated with different industries.</p>
+                <div class="project__icons">
+                  <img src="imgs/html_logo.png" alt="HTML-Icon"
+                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
+                  <img src="imgs/css_logo.png" alt="CSS-Icon"
+                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
+                </div>
+                <div class="github__btn">
+                  <img src="imgs/github-mark.png" alt="Github"
+                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
+                  <p style="font-size: 0.938vw;">Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img__data">
+              <div class="img__container">
+                <img src="imgs/mariogatchi.png" alt="Mariogatchi" class="carousel__img">
+                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
+              </div>
+              <div class="carousel__description">
+                <p class="project__title">Mariogatchi</p>
+                <p class="project__details">A game mixed between Tamagotchi digital pets and Pokemon. Catch Mariogatchi
+                  creatures in the wild,
+                  care for them by feeding, cleaning, and playing with your new pet.</p>
+                <div class="project__icons">
+                  <img src="imgs/html_logo.png" alt="HTML-Icon"
+                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
+                  <img src="imgs/css_logo.png" alt="CSS-Icon"
+                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
+                </div>
+                <div class="github__btn">
+                  <img src="imgs/github-mark.png" alt="Github"
+                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
+                  <p style="font-size: 0.938vw;">Code</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- portfolio end -->
 
-      <hr />
-    </div>
-    <!-- main end -->
-  </body>
+      <!-- SwiperJS -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+
+    </section>
+    <!-- portfolio end -->
+
+    <hr />
+  </div>
+  <!-- main end -->
+</body>
+
 </html>
