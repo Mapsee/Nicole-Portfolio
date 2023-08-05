@@ -1,237 +1,445 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NXL</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NXL</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
 
-  <!-- SwiperJS CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <body>
+    <!-- navbar begin -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#top" class="navbar__logo">NXL</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links">about</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#portfolio" class="navbar__links">portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__links">skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links">contact</a>
+          </li>
+        </ul>
+        <i class="uil uil-bars" id="menu-bar"></i>
+      </div>
+    </nav>
 
-</head>
+    <ul class="mobile__navbar__menu invisible" id="mobile__nav">
+      <a href="#about" class="mobile__navbar__links">
+        <li class="mobile__navbar__item">about</li>
+      </a>
+      <a href="#portfolio" class="mobile__navbar__links">
+        <li class="mobile__navbar__item">portfolio</li>
+      </a>
+      <a href="#skills" class="mobile__navbar__links">
+        <li class="mobile__navbar__item">skills</li>
+      </a>
+      <a href="#contact" class="mobile__navbar__links">
+        <li class="mobile__navbar__item">contact</li>
+      </a>
+    </ul>
+    <!-- navbar end -->
 
-<body>
-  <!-- navbar begin -->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="/" id="navbar__logo">NXL</a>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="/about.html" class="navbar__links">about</a>
-        </li>
-        <li class="navbar__item">
-          <a href="/portfolio.html" class="navbar__links">portfolio</a>
-        </li>
-        <li class="navbar__item">
-          <a href="/skills.html" class="navbar__links">skills</a>
-        </li>
-        <li class="navbar__item">
-          <a href="/contact.html" class="navbar__links">contact</a>
-        </li>
-      </ul>
+    <!-- main begin -->
+    <div class="main">
+      <!-- intro begin -->
+      <section id="intro__section">
+        <div class="intro__content">
+          <div class="intro__container">
+            <h1 class="name">I'm Nicole Leung</h1>
+            <p class="about__paragraph">
+              Currently a 3rd year student at the University of Toronto pursuing
+              a computer science specialist degree. Developing projects in
+              Python, Java, and <a href="#skills" class="intro__word__links">more</a>. View my <a href="#portfolio" class="intro__word__links">work</a> or send me a <a href="#contact" class="intro__word__links">message</a>.
+            </p>
+          </div>
+          <div class="logo__container">
+            <a
+              href="https://github.com/Mapsee"
+              target="_blank"
+              class="intro__links"
+              ><img
+                src="imgs/github-mark.png"
+                alt="Github"
+                class="intro-link-logo"
+            /></a>
+            <a
+              href="mailto: nxin.leung@mail.utoronto.ca"
+              target="_blank"
+              class="intro__links"
+              ><img
+                src="imgs/Microsoft.png"
+                alt="Microsoft"
+                class="intro-link-logo"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/nicolexyleung/"
+              target="_blank"
+              class="intro__links"
+              ><img
+                src="imgs/LI-In-Bug.png"
+                alt="LinkedIn"
+                class="intro-link-logo"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- intro end -->
+
+      <hr id="about" />
+
+      <!-- about begin -->
+      <section class="about__section">
+        <div class="about__container">
+          <div class="about__details">
+            <h1 class="about__title">about</h1>
+            <p class="about__header">
+              Working towards an HBSc in computer science and participating in
+              the Arts & Science Internship Program (ASIP).
+            </p>
+            <ul class="about__facts">
+              <li class="about__item">
+                I have a focus on software development and an interest in web as
+                well as game design.
+              </li>
+              <li class="about__item">
+                I’ve worked on backend and frontend of projects.
+              </li>
+              <li class="about__item">
+                I’m eager to learn more about the internet everyday.
+              </li>
+            </ul>
+          </div>
+          <div class="hometown__img">
+            <img
+              src="imgs/landscape.jpg"
+              alt="Landscape"
+              class="landscape__img"
+            />
+            <p class="landscape__disc">
+              Photo taken in my home town at British Columbia.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+
+      <hr id="portfolio" />
+
+      <!-- portfolio start -->
+      <section class="portfolio__section">
+        <div class="portfolio__label__container">
+          <h1 class="portfolio__title">portfolio</h1>
+          <p class="portfolio__header">my projects</p>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img__data">
+                <div class="img__container">
+                  <img
+                    src="imgs/google_copy.png"
+                    alt="GoogleCopy"
+                    class="carousel__img"
+                  />
+                  <p class="download-resume">
+                    see my resume
+                    <a href="/resumepg.html" class="resume__link">here</a>...
+                  </p>
+                </div>
+                <div class="carousel__description">
+                  <p class="project__title">Google Copy</p>
+                  <p class="project__details">
+                    Frontend replica of google search, google image search, and
+                    advanced search. This website project is made with HTML and
+                    CSS to browse the web through similar search functionalities
+                    as Google.
+                  </p>
+                  <div class="project__icons">
+                    <img
+                      src="imgs/html_logo.png"
+                      alt="HTML-Icon"
+                      class="project__icon" style="width: auto; max-height: 6.4814814814815vh"
+                    />
+                    <img
+                      src="imgs/css_logo.png"
+                      alt="CSS-Icon"
+                      class="project__icon" style="width: auto; max-height: 6.4814814814815vh"
+                    />
+                  </div>
+                  <a href="https://github.com/Mapsee/google-copy" target="_blank" style="text-decoration: none;">                  <div class="github__btn">
+                    <img
+                      src="imgs/github-mark.png"
+                      alt="Github"
+                      class="github__btn__img"
+                    />
+                    <p class="github__btn__txt">Code</p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img__data">
+                <div class="img__container">
+                  <img
+                    src="imgs/covision.png"
+                    alt="COVISION"
+                    class="carousel__img"
+                  />
+                  <p class="download-resume">
+                    see my resume
+                    <a href="/resumepg.html" class="resume__link">here</a>...
+                  </p>
+                </div>
+                <div class="carousel__description">
+                  <p class="project__title">COVISION</p>
+                  <p class="project__details">
+                    Using datasets from the Government of Ontario and Statistics
+                    Canada to explore the trends between COVID-19 and employment
+                    affiliated with different industries.
+                  </p>
+                  <div class="project__icons">
+                    <img
+                      src="imgs/python_logo.png"
+                      alt="CSS-Icon"
+                      class="project__icon" style="width: auto; max-height: 6.4814814814815vh"
+                    />
+                  </div>
+                  <a href="https://github.com/victor-zheng-codes/CSC110-Project" target="_blank" style="text-decoration: none;">                  <div class="github__btn">
+                    <img
+                      src="imgs/github-mark.png"
+                      alt="Github"
+                      class="github__btn__img"
+                    />
+                    <p class="github__btn__txt">Code</p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img__data">
+                <div class="img__container">
+                  <img
+                    src="imgs/mariogatchi.png"
+                    alt="Mariogatchi"
+                    class="carousel__img"
+                  />
+                  <p class="download-resume">
+                    see my resume
+                    <a href="/resumepg.html" class="resume__link">here</a>...
+                  </p>
+                </div>
+                <div class="carousel__description">
+                  <p class="project__title">Mariogatchi</p>
+                  <p class="project__details">
+                    A game mixed between Tamagotchi digital pets and Pokemon.
+                    Catch Mariogatchi creatures in the wild, care for them by
+                    feeding, cleaning, and playing with your new pet.
+                  </p>
+                  <div class="project__icons">
+                    <img
+                      src="imgs/java_logo.png"
+                      alt="HTML-Icon"
+                      class="project__icon" style="width: auto; max-height: 6.4814814814815vh;"
+                    />
+                  </div>
+                  <a href="https://github.com/CSC207-2022F-UofT/course-project-mariogatchi" target="_blank" style="text-decoration: none;">
+                    <div class="github__btn">
+                      <img
+                      src="imgs/github-mark.png"
+                      alt="Github"
+                      class="github__btn__img"
+                    />
+                    <p class="github__btn__txt">Code</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- SwiperJS -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/menu.js"></script>
+      </section>
+      <!-- portfolio end -->
+
+      <hr id="skills" />
+
+      <!-- skills start -->
+      <section class="skills__section">
+        <h1 class="skills__title">skills</h1>
+        <div class="skills__content">
+          <div class="languages__column">
+            <p class="skills__header">Languages</p>
+            <div class="col__lang__icon">
+              <img
+                src="imgs/python_logo.png"
+                alt="Python-Logo"
+                class="languages__logo"
+                
+              />
+              <img
+                src="imgs/java_logo.png"
+                alt="Java-Logo"
+                class="languages__logo"
+                
+              />
+              <img
+                src="imgs/html_logo.png"
+                alt="HTML-Logo"
+                class="languages__logo"
+                
+              />
+              <img
+                src="imgs/c_logo.png"
+                alt="C-Logo"
+                class="languages__logo"
+                
+              />
+              <img
+                src="imgs/mysql_logo.png"
+                alt="SQL-Logo"
+                class="languages__logo"
+                
+              />
+              <img
+                src="imgs/css_logo.png"
+                alt="CSS-Logo"
+                class="languages__logo"
+                
+              />
+            </div>
+          </div>
+          <div class="courses__column">
+            <p class="skills__header">Relevant Courses</p>
+            <ul class="courses__list">
+              <li class="courses__item">Software Design</li>
+              <li class="courses__item">Intro to the Theory of Computation</li>
+              <li class="courses__item">Computer Organization</li>
+              <li class="courses__item">
+                Probability with Computer Applications
+              </li>
+              <li class="courses__item">Data Structures and Analysis</li>
+              <li class="courses__item">
+                Software Tools and Systems Programming
+              </li>
+              <li class="courses__item">Introduction to Databases</li>
+              <li class="courses__item">
+                Foundations of Computer Science I and II
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr id="contact" />
+
+      <!-- contact start -->
+      <section class="contact__section">
+        <div class="contact__head__container">
+          <h1 class="contact__title">contact me</h1>
+          <p class="contact__subtitle">Let's work on a project together</p>
+        </div>
+        <div class="contact__description__container">
+          <form action="https://getform.io/f/4e48ebfd-7ae7-4768-b171-4a7aa7444bbb" method="POST" class="form__container">
+            <input name="name" type="text" placeholder="Your name" class="contact__input" />
+            <input name="email" type="text" placeholder="Email" class="contact__input" />
+            <input name="subject" type="text" placeholder="Subject" class="contact__input" />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="50"
+              placeholder="Message"
+              class="contact__input"
+              style="height: 171px; padding-top: 12px"
+            ></textarea>
+            <input type="submit" value="Send" class="form__button" />
+          </form>
+
+          <div class="contact__info__container">
+            <div class="contact__icons__container">
+              <a
+                href="mailto: nxin.leung@mail.utoronto.ca"
+                class="contact__link__name"
+                ><img src="imgs/Microsoft.png" alt="" class="contact__icon"
+              /></a>
+
+              <a href="https://github.com/Mapsee" target="_blank"
+                ><img src="imgs/github-mark.png" alt="" class="contact__icon"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com/in/nicolexyleung/"
+                target="_blank"
+                ><img src="imgs/LI-In-Bug.png" alt="" class="contact__icon"
+              /></a>
+            </div>
+
+            <div class="contact__links__container">
+              <!-- Email link -->
+              <div class="contact__link">
+                <h3 class="contact__icon__name">Outlook</h3>
+                <p class="contact__link__name">nxin.leung@mail.utoronto.ca</p>
+              </div>
+
+              <div class="contact__link">
+                <h3 class="contact__icon__name">Github</h3>
+                <p class="contact__link__name">https://github.com/Mapsee</p>
+              </div>
+
+              <div class="contact__link">
+                <h3 class="contact__icon__name">LinkedIn</h3>
+                <p class="contact__link__name">
+                  https://www.linkedin.com/in/nicolexyleung/
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact end -->
+
+      <div class="footer">
+        <a href="#top" style="text-decoration: none"
+          ><h1
+            class="navbar__logo"
+            style="font-weight: normal; margin-right: 3.125vw"
+          >
+            LXN
+          </h1></a
+        >
+      </div>
     </div>
-  </nav>
-  <!-- navbar end -->
-
-  <!-- main begin -->
-  <div class="main">
-    <!-- intro begin -->
-    <section class="intro__section">
-      <div class="intro__content">
-        <div class="intro__container">
-          <h1 class="name">I'm Nicole Leung</h1>
-          <p class="about__paragraph">
-            Currently a 3rd year student at the University of Toronto pursuing a
-            computer science specialist degree. Developing projects in Python,
-            Java, and more. View my work or send me a message.
-          </p>
-        </div>
-        <div class="logo__container">
-          <a href="https://github.com/Mapsee" target="_blank" class="intro__links"><img src="imgs/github-mark.png"
-              alt="Github" style="max-width: 2.344vw; max-height: 4.1666666666667vh" /></a>
-          <a href="mailto: nxin.leung@mail.utoronto.ca" target="_blank" class="intro__links"><img
-              src="imgs/Microsoft.png" alt="Microsoft" style="max-width: 2.520vw; max-height: 4.1666666666667vh" /></a>
-          <a href="https://www.linkedin.com/in/nicolexyleung/" target="_blank" class="intro__links"><img
-              src="imgs/LI-In-Bug.png" alt="LinkedIn" style="max-width: 2.756vw; max-height: 4.1666666666667vh" /></a>
-        </div>
-      </div>
-    </section>
-    <!-- intro end -->
-
-    <hr />
-
-    <!-- about begin -->
-    <section class="about__section">
-      <div class="about__container">
-        <div class="about__details">
-          <h1 class="about__title">about</h1>
-          <p class="about__header">
-            Working towards an HBSc in computer science and participating in the
-            Arts & Science Internship Program (ASIP).
-          </p>
-          <ul class="about__facts">
-            <li class="about__item">
-              I have a focus on software development and an interest in web as
-              well as game design.
-            </li>
-            <li class="about__item">
-              I’ve worked on backend and frontend of projects.
-            </li>
-            <li class="about__item">
-              I’m eager to learn more about the internet everyday.
-            </li>
-          </ul>
-        </div>
-        <div class="hometown__img">
-          <img src="imgs/landscape.jpg" alt="Landscape" class="landscape__img" />
-          <p class="landscape__disc">
-            Photo taken in my home town at British Columbia.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- about end -->
-
-    <hr />
-
-    <!-- portfolio start -->
-    <section class="portfolio__section">
-      <div class="portfolio__label__container">
-        <h1 class="portfolio__title">portfolio</h1>
-        <p class="portfolio__header">my projects</p>
-      </div>
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="img__data">
-              <div class="img__container">
-                <img src="imgs/google_copy.png" alt="GoogleCopy" class="carousel__img">
-                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
-              </div>
-              <div class="carousel__description">
-                <p class="project__title">Google Copy</p>
-                <p class="project__details">Frontend replica of google search, google image search, and
-                  advanced search. This website project is made with HTML and CSS to
-                  browse the web through similar search functionalities as Google.</p>
-                <div class="project__icons">
-                  <img src="imgs/html_logo.png" alt="HTML-Icon"
-                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
-                  <img src="imgs/css_logo.png" alt="CSS-Icon"
-                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
-                </div>
-                <div class="github__btn">
-                  <img src="imgs/github-mark.png" alt="Github"
-                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
-                  <p style="font-size: 0.938vw;">Code</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img__data">
-              <div class="img__container">
-                <img src="imgs/covision.png" alt="COVISION" class="carousel__img">
-                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
-              </div>
-              <div class="carousel__description">
-                <p class="project__title">COVISION</p>
-                <p class="project__details">Using datasets from the Government of Ontario and Statistics Canada to
-                  explore the trends between
-                  COVID-19 and employment affiliated with different industries.</p>
-                <div class="project__icons">
-                  <img src="imgs/html_logo.png" alt="HTML-Icon"
-                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
-                  <img src="imgs/css_logo.png" alt="CSS-Icon"
-                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
-                </div>
-                <div class="github__btn">
-                  <img src="imgs/github-mark.png" alt="Github"
-                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
-                  <p style="font-size: 0.938vw;">Code</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img__data">
-              <div class="img__container">
-                <img src="imgs/mariogatchi.png" alt="Mariogatchi" class="carousel__img">
-                <p style="font-size: 1.042vw; margin: 0.677vw 0 0 1.042vw;">see my resume...</p>
-              </div>
-              <div class="carousel__description">
-                <p class="project__title">Mariogatchi</p>
-                <p class="project__details">A game mixed between Tamagotchi digital pets and Pokemon. Catch Mariogatchi
-                  creatures in the wild,
-                  care for them by feeding, cleaning, and playing with your new pet.</p>
-                <div class="project__icons">
-                  <img src="imgs/html_logo.png" alt="HTML-Icon"
-                    style="max-width: 3.094vw; max-height: 6.4814814814815vh;">
-                  <img src="imgs/css_logo.png" alt="CSS-Icon"
-                    style="max-width: 3.247vw; max-height: 6.4814814814815vh;">
-                </div>
-                <div class="github__btn">
-                  <img src="imgs/github-mark.png" alt="Github"
-                    style="max-width: 3.333vw; max-height: 5.9259259259259vh;">
-                  <p style="font-size: 0.938vw;">Code</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <!-- SwiperJS -->
-      <script src="js/swiper-bundle.min.js"></script>
-      <script src="js/script.js"></script>
-
-    </section>
-    <!-- portfolio end -->
-
-    <hr />
-
-    <!-- skills start -->
-    <section class="skills__section">
-      <h1 class="skills__title">skills</h1>
-      <div class="skills__content">
-        <div class="languages__column">
-          <p class="skills__header">Languages</p>
-          <div class="col__lang__icon">
-              <img src="imgs/python_logo.png" alt="Python-Logo" class="languages__logo" style="width: 4.281vw;">
-              <img src="imgs/java_logo.png" alt="Java-Logo" class="languages__logo" style="width: 10.029vw;">
-              <img src="imgs/html_logo.png" alt="HTML-Logo" class="languages__logo" style="width: 4.420vw;">
-              <img src="imgs/c_logo.png" alt="C-Logo" class="languages__logo" style="width: 4.989vw;">
-              <img src="imgs/mysql_logo.png" alt="SQL-Logo" class="languages__logo" style="width: 7.703vw;">
-              <img src="imgs/css_logo.png" alt="CSS-Logo" class="languages__logo" style="width: 4.638vw;">
-          </div>
-        </div>
-        <div class="courses__column">
-          <p class="skills__header">Relevant Courses</p>
-          <ul class="courses__list">
-            <li class="courses__item">Software Design</li>
-            <li class="courses__item">Intro to the Theory of Computation</li>
-            <li class="courses__item">Computer Organization</li>
-            <li class="courses__item">Probability with Computer Applications</li>
-            <li class="courses__item">Data Structures and Analysis</li>
-            <li class="courses__item">Software Tools and Systems Programming</li>
-            <li class="courses__item">Introduction to Databases</li>
-            <li class="courses__item">Foundations of Computer Science I and II</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <hr />
-
-  </div>
-  <!-- main end -->
-</body>
-
+    <!-- main end -->
+  </body>
 </html>
